@@ -5,7 +5,6 @@ import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import pageobjects.HomePage;
 import pageobjects.OrderPage;
 
@@ -13,9 +12,9 @@ import static org.junit.Assert.assertTrue;
 
 @RunWith(Parameterized.class)
 public class OrderScooterTest {
-    WebDriver driver;
-    HomePage homePage;
-    OrderPage orderPage;
+    private WebDriver driver;
+    private HomePage homePage;
+    private OrderPage orderPage;
 
     private final String name;
     private final String family;
